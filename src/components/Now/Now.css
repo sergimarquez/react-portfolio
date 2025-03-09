@@ -1,0 +1,23 @@
+.now {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.now__list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.now__list li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.now__update {
+  font-size: 0.9rem;
+  color: var(--clr-fg-alt);
+  margin-top: 1rem;
+}

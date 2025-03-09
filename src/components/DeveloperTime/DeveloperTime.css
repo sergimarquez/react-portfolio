@@ -1,0 +1,9 @@
+.fixed-seconds {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 12ch;
+  font-family: monospace;
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  white-space: nowrap;
+}
