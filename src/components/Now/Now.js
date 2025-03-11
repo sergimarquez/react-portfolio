@@ -13,7 +13,7 @@ const Now = () => {
         ))}
       </ul>
       <p className="now__update">
-        📅<em>Last updated: {lastUpdated}</em>
+        📅<em> Last updated: {lastUpdated}</em>
       </p>
     </section>
   );
