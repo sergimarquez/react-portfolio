@@ -13,7 +13,7 @@ const about = {
   description:
     'I love building websites and web apps. I focus on clean code, simplicity, and smooth user experiences.',
   social: {
-    linkedin: 'https://linkedin.com/sergimarquez',
+    linkedin: 'https://www.linkedin.com/in/sergi-marquez/',
     github: 'https://github.com/sergimarquez',
   },
 };
