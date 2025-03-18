@@ -22,7 +22,7 @@ const projects = [
   {
     name: 'AI Game',
     description: 'An AI-powered question game for frontend developers. Generates coding questions dynamically and provides intelligent feedback using OpenAI.',
-    stack: ['Next.js', 'Tailwind CSS', 'OpenAI API'],
+    stack: ['Next.js', 'Typescript', 'OpenAI API', 'Tailwind CSS' ],
     type: 'Full Stack',
     sourceCode: 'https://github.com/sergimarquez/ai-flashcard-game',
     livePreview: 'https://frontend-quest.netlify.app/',
