@@ -2,10 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import './DeveloperTime.css';
 
 const DeveloperTime = () => {
-  const startDate = useRef(new Date('2015-01-01').getTime());
-  const [timeElapsed, setTimeElapsed] = useState(
-    Date.now() - startDate.current
-  );
+  const startDate = useRef(new Date('2015-09-01').getTime());
+  const [timeElapsed, setTimeElapsed] = useState(Date.now() - startDate.current);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,9 +14,9 @@ const DeveloperTime = () => {
   }, []);
 
   const milliseconds = timeElapsed.toString();
-  const days = Math.floor(timeElapsed / (1000 * 60 * 60 * 24)).toLocaleString(
-    'en-US'
-  );
+  const totalDays = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+  const years = Math.floor(totalDays / 365);
+  const days = totalDays % 365;
 
   return (
     <p className="about__desc">
@@ -29,7 +27,7 @@ const DeveloperTime = () => {
         </span>{' '}
         milliseconds
       </strong>{' '}
-      — that&apos;s <strong>{days} days</strong> as a developer!
+      — that&apos;s <strong>{years} years and {days} days</strong> as a developer!
     </p>
   );
 };
