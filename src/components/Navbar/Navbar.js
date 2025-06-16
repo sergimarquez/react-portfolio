@@ -37,11 +37,11 @@ const Navbar = () => {
           </a>
         </li>
 
-        {/* <li className="nav__list-item">
+        <li className="nav__list-item">
           <a href="#now" onClick={toggleNavList} className="link link--nav">
             Now
           </a>
-        </li> */}
+        </li>
 
         {contact.email ? (
           <li className="nav__list-item">

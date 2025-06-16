@@ -27,7 +27,7 @@ const DeveloperTime = () => {
         </span>{' '}
         milliseconds
       </strong>{' '}
-      — that&apos;s <strong>{years} years and {days} days</strong> as a developer!
+      — that&apos;s <strong>{years} years and {days} days</strong> of continuous learning.
     </p>
   );
 };

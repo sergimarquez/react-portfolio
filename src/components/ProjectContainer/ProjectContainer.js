@@ -4,7 +4,7 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import './ProjectContainer.css';
 
 const ProjectContainer = ({ project }) => (
-  <div className="project">
+  <div className="project" onClick={() => project.livePreview && window.open(project.livePreview, '_blank')}>
     {project.image && project.livePreview && (
       <a href={project.livePreview} target="_blank" rel="noopener noreferrer">
         <img src={project.image} alt={project.name} className="project__image" />

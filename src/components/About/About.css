@@ -1,38 +1,153 @@
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 4rem;
   text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
 .about__name {
-  color: var(--clr-primary);
+  color: var(--clr-accent);
+  font-weight: 600;
+  position: relative;
+}
+
+.about__name::after {
+  content: '';
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--clr-accent), transparent);
+  opacity: 0.3;
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+  letter-spacing: 0.01em;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
 }
 
 .about__desc {
-  font-size: 1rem;
-  max-width: 450px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--clr-fg);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 3rem;
+}
+
+.about__contact {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.8s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .about .link--icon {
-  margin-right: 0.8em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about .link--icon .MuiSvgIcon-root {
+  font-size: 1.6rem !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+}
+
+/* Specific alignment fix for LinkedIn icon */
+.about .link--icon[aria-label="linkedin"] .MuiSvgIcon-root {
+  transform: translateY(1px) scale(1.15);
+}
+
+.about .link--icon::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--clr-accent);
+  transition: all 0.3s ease;
+}
+
+.about .link--icon:hover {
+  color: var(--clr-accent);
+}
+
+.about .link--icon:hover::after {
+  width: 100%;
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin-right: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 600px) {
   .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about__role {
+    font-size: 1.2rem;
+  }
+  
+  .about__desc {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .about__contact {
+    justify-content: center;
   }
 }

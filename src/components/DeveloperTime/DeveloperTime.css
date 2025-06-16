@@ -2,8 +2,15 @@
   display: inline-flex;
   justify-content: flex-end;
   width: 12ch;
-  font-family: monospace;
+  font-family: inherit;
   font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--clr-fg-alt);
   overflow: hidden;
   white-space: nowrap;
+}
+
+.developer-time {
+  color: var(--clr-accent);
+  font-weight: 600;
 }

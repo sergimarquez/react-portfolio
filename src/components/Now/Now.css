@@ -6,17 +6,33 @@
 .now__list {
   list-style: none;
   padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 2rem auto;
 }
 
-.now__list li {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
+.now__item {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  font-family: 'Crimson Text', serif;
+  color: var(--clr-fg);
+  transition: all 0.3s ease;
+  border-left: 3px solid var(--clr-accent);
+  background: var(--clr-bg-alt);
+  border-radius: 0 8px 8px 0;
+  text-align: left;
+}
+
+.now__item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .now__update {
   font-size: 0.9rem;
   color: var(--clr-fg-alt);
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-style: italic;
 }

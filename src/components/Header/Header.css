@@ -6,6 +6,30 @@
   justify-content: space-between;
 }
 
+.header h3 a {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.header h3 a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.header h3 a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.header h3 a:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
