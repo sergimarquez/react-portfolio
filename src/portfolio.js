@@ -1,6 +1,6 @@
+import threegoodImage from './assets/images/3good.png';
+import siteblockrImage from './assets/images/siteblockr.png';
 import portfolioImage from './assets/images/retro-portfolio.png';
-import rentalImage from './assets/images/rental-app.png';
-import aiFlashcardImage from './assets/images/ai-app.png';
 
 const header = {
   homepage: 'https://sergimarquez.com',
@@ -9,9 +9,8 @@ const header = {
 
 const about = {
   name: 'Sergi Marquez',
-  role: 'Full Stack Developer',
   description:
-    'I love building websites and web apps. I focus on clean code, simplicity, and smooth user experiences.',
+    'I love building thoughtful websites and web apps. I focus on clean code, simplicity, and meaningful user experiences.',
   social: {
     linkedin: 'https://www.linkedin.com/in/sergi-marquez/',
     github: 'https://github.com/sergimarquez',
@@ -20,54 +19,45 @@ const about = {
 
 const projects = [
   {
-    name: 'AI Game',
-    description: 'An AI-powered question game for frontend developers. Generates coding questions dynamically and provides intelligent feedback using OpenAI.',
-    stack: ['Next.js', 'Typescript', 'OpenAI API', 'Tailwind CSS' ],
-    type: 'Full Stack',
-    sourceCode: 'https://github.com/sergimarquez/ai-flashcard-game',
-    livePreview: 'https://frontend-quest.netlify.app/',
-    image: aiFlashcardImage,
+    name: '3Good',
+    description: 'Daily gratitude practice app — simple, privacy-first, helping users reflect on three good things each day.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    type: 'Web App',
+    sourceCode: 'https://github.com/sergimarquez/three-things',
+    livePreview: 'https://3good.app/',
+    image: threegoodImage,
+  },
+  {
+    name: 'SiteBlockr',
+    description: 'Chrome extension for blocking distracting websites with real-time controls and privacy-focused storage.',
+    stack: ['TypeScript', 'React', 'Chrome APIs', 'Tailwind CSS'],
+    type: 'Browser Extension',
+    sourceCode: 'https://github.com/sergimarquez/site-blockr',
+    livePreview: 'https://chrome.google.com/webstore/detail/siteblockr',
+    image: siteblockrImage,
   },
   {
     name: 'Portfolio Website',
-    description:
-      'A custom-built portfolio with a retro aesthetic, made with HTML, CSS, and JavaScript. Features early projects that showcase my developer growth.',
+    description: 'Custom-built portfolio with retro aesthetic, showcasing early projects and my growth as a developer.',
     stack: ['HTML', 'CSS', 'JavaScript', 'BEM'],
     type: 'Frontend',
     sourceCode: 'https://github.com/sergimarquez/sergimarquez',
     livePreview: 'https://sergimarquez.dev/',
     image: portfolioImage,
-  },
-  {
-    name: 'Rental App',
-    description: 'A single-page rental app with role-based authentication, CRUD functionality, and a RESTful backend.',
-    stack: ['React', 'Firebase', 'Bootstrap', 'Google Maps API', 'Jest'],
-    type: 'Full Stack',
-    sourceCode: 'https://github.com/sergimarquez/rental-app',
-    livePreview: 'https://luxury-homes-41df8.web.app/',
-    image: rentalImage,
   },  
 ];
 
 
 const skills = {
-  languages: ['JavaScript', 'TypeScript', 'PHP'],
-  frontend: [
-    'React',
-    'Next.js',
-    'SASS',
-    'Tailwind CSS',
-    'Webpack',
-    'Performance Optimization',
-    'SEO',
-  ],
-  backend: ['Node.js', 'Express', 'REST APIs', 'MongoDB', 'MySQL'],
-  cms: ['WordPress (Custom Development)', 'Shopify', 'Webflow'],
-  testing: ['Cypress', 'Jest'],
+  'frontend frameworks': ['React', 'Next.js', 'TypeScript', 'JavaScript ES6+', 'PHP'],
+  'styling & ui': ['CSS', 'SASS', 'Responsive Design', 'UI/UX Design', 'Figma'],
+  'backend & data': ['Node.js', 'Express', 'REST APIs', 'MongoDB', 'MySQL', 'AI Integration'],
+  'tools & optimization': ['Git', 'Webpack', 'Jest', 'Cypress', 'WordPress Development', 'Web Performance'],
 };
 
 const now = [
-  '📱 Building a React Native mobile app with AI integration.',
+  'Building a personal finance tracker in React Native, deepening my knowledge developing iOS apps.',
+  'Rebuilding my side projects with TypeScript and adding new features for better user experience.',
 ];
 
 const contact = {
