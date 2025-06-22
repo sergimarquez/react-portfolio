@@ -33,7 +33,7 @@ const projects = [
     stack: ['TypeScript', 'React', 'Chrome APIs', 'Tailwind CSS'],
     type: 'Browser Extension',
     sourceCode: 'https://github.com/sergimarquez/site-blockr',
-    livePreview: 'https://chrome.google.com/webstore/detail/siteblockr',
+    livePreview: 'https://chromewebstore.google.com/detail/ogicdnegacclceajhgaoehlnidgndllp?utm_source=item-share-cb',
     image: siteblockrImage,
   },
   {
