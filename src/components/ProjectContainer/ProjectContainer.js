@@ -33,6 +33,7 @@ const ProjectContainer = ({ project }) => (
           rel="noopener noreferrer"
           aria-label="source code"
           className="link link--icon"
+          onClick={(e) => e.stopPropagation()}
         >
           <GitHubIcon />
         </a>
@@ -45,6 +46,7 @@ const ProjectContainer = ({ project }) => (
           rel="noopener noreferrer"
           aria-label="live preview"
           className="link link--icon"
+          onClick={(e) => e.stopPropagation()}
         >
           <LaunchIcon />
         </a>
